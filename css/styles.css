@@ -1,0 +1,160 @@
+:root {
+    --fuente-principal: "Roboto Condensed", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    outline: none;
+    font-size: 1.6rem;
+    display: block;
+    padding: 2rem;
+    font-family: var(--fuente-principal);
+    color: black;
+    background-color: rgb(214, 214, 214);
+    border: none;
+}
+
+.boton {
+    display: block;
+    font-size: 1.6rem;
+    padding: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1509fa;
+    color: white;
+    font-family: var(--fuente-principal);
+}
+
+.separador {
+    width: 95%;
+    margin: 1rem auto;
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--fuente-principal);
+    background: linear-gradient(to right, #2600ff 70%, #4e01a6 100%);
+}
+
+.contenedor {
+    max-width: 90%;
+    margin: 5rem auto;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+
+.contenedor h1 {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.contenedor_entradas {
+    width: 85%;
+    margin: auto;
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor_entradas input, button {
+    border-radius: 20px;
+}
+
+.contenedor_entradas input {
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.contenedor_entradas button {
+    width: 100%;
+    margin: auto;
+}
+
+@media (width >= 1200px) {
+    .contenedor {
+        width: 50%;
+    }
+
+    .contenedor_entradas {
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1.5rem 0;
+    }
+    .contenedor_entradas button {
+        width: 20%;
+        font-size: 1.8rem;
+        margin-left: -18rem;
+    }
+    .contenedor_entradas input {
+        width: 80%;
+        margin: auto;
+        font-size: 2rem;
+    }
+}
+
+.contenedor_tareas {
+    width: 100%;
+    height: 30rem;
+    padding: 0 1.5rem;
+    overflow-y: scroll;
+    margin: auto;
+}
+
+.contenedor_tareas h2 {
+    text-align: center;
+}
+
+.contenedor_tareas ul {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.contenedor_tareas .tarea-individual {
+    width: 100%;
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarea-individual li {
+    overflow-x: hidden;
+}
+
+.tarea-individual .contenedor-img {
+    display: flex;
+    gap: 1rem;
+}
+
+.contenedor-img button {
+    border: none;
+    cursor: pointer;
+    background-color: blue;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.tarea-individual img {
+    height: 3rem;
+}
